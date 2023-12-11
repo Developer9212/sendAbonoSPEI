@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: fenoreste.spei.SpeiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.628 s <<< FAILURE! - in fenoreste.spei.SpeiApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig': Injection of autowired dependencies failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+Caused by: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+Caused by: org.postgresql.util.PSQLException: El intento de conexión falló.
+Caused by: java.net.SocketTimeoutException: Connect timed out
+
